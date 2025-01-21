@@ -1,0 +1,41 @@
+
+.botonesres{
+    display: inline-flex;
+    width: 100px;
+    height: 30px;
+    background: #06ac6c;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color:#fff;
+    border: none;
+    cursor:pointer;
+    transition: .3s ease all;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.botonesres span{
+    position: relative;
+    padding-top: 10px;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.botonesres::after{
+  content:"";
+  width: 100%;
+  height: 100%;
+  background: #00fdd3;
+  position: absolute;
+  z-index: 1;
+  top:-50px;
+  left: 0;
+}
+.botonesres:hover span{
+  color:#141414;
+}
+.botonesres:hover::after{
+    top:0px;
+}
